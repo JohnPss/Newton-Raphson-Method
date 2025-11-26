@@ -44,22 +44,22 @@ python3 newton_interativo.py
 MÉTODO DE NEWTON-RAPHSON - CALCULADORA DE RAÍZES
 =============================================================
 
-Digite f(x): x**2 - 4
+Digite f(x): x**3-9*x+3
 Digite f'(x) (deixe vazio para derivar automaticamente): 
-✓ Derivada calculada: f'(x) = 2*x
+✓ Derivada calculada: f'(x) = 3*x**2 - 9
 
 Digite x0 (chute inicial): 1
 Digite ε (tolerância): 0.0001
-Digite max_iter (máximo de iterações): 50
+Digite max_iter (máximo de iterações): 20
 
 ------------------------------------------------------------
 EXECUTANDO MÉTODO...
 ------------------------------------------------------------
 
-Iteração   1: xn =   1.0000000000, f(xn) =  -3.0000e+00, erro =   1.5000e+00
-Iteração   2: xn =   2.5000000000, f(xn) =   2.2500e+00, erro =   2.5000e-01
-Iteração   3: xn =   2.2500000000, f(xn) =   6.2500e-02, erro =   1.3889e-02
-Iteração   4: xn =   2.2361111111, f(xn) =   9.8846e-05, erro =   4.9383e-05
+Iteração   1: xn =   1.0000000000, f(xn) =  -5.0000000000e+00, erro =   8.3333333333e+00
+Iteração   2: xn =   0.1666666667, f(xn) =   1.5046296296e+00, erro =   1.6874350987e-01
+Iteração   3: xn =   0.3354101765, f(xn) =   1.9042051554e-02, erro =   2.1982166193e-03
+Iteração   4: xn =   0.3376083932, f(xn) =   4.8728853246e-06, erro =   5.6281480576e-07
 ✓ Convergiu em 4 iterações!
 
 ✓ Resultados salvos em 'resultado_newton_raphson.txt'
@@ -113,27 +113,27 @@ O programa gera um arquivo `resultado_newton_raphson.txt` contendo:
 MÉTODO DE NEWTON-RAPHSON - RESULTADOS
 ============================================================
 
-Função: f(x) = x**2 - 4
-Derivada: f'(x) = 2*x
+Função: f(x) = x**3-9*x+3
+Derivada: f'(x) = 3*x**2 - 9
 Chute inicial (x0): 1.0
 Tolerância (ε): 0.0001
 
 ------------------------------------------------------------
 RESULTADO FINAL
 ------------------------------------------------------------
-Raiz aproximada: 2.000000000000000
+Raiz aproximada: 0.337608955965801
 Número de iterações: 4
 Status: ✓ Convergiu
 
 ------------------------------------------------------------
 HISTÓRICO DE ITERAÇÕES
 ------------------------------------------------------------
-   k                 xn             f(xn)              erro
+   k                 xn              f(xn)               erro
 ------------------------------------------------------------
-   1       1.0000000000    -3.0000000e+00     1.5000000e+00
-   2       2.5000000000     2.2500000e+00     2.5000000e-01
-   3       2.2500000000     6.2500000e-02     1.3889000e-02
-   4       2.2361111111     9.8846000e-05     4.9383000e-05
+   1       1.0000000000  -5.0000000000e+00   8.3333333333e-01
+   2       0.1666666667   1.5046296296e+00   1.6874350987e-01
+   3       0.3354101765   1.9042051554e-02   2.1982166193e-03
+   4       0.3376083932   4.8728853246e-06   5.6281480576e-07
 ```
 
 ## ⚠️ Avisos e Limitações
